@@ -4,10 +4,47 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no" />
 	<title>test_the_person</title>
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	
 </head>
 
 <body>
+	<div class="container">
+		<div class='navigation'>
+			<button class='start'>Start</button>
+			<input class='delay' type='number' step='100'>
+			<div>
+				<p>Player: </p>
+				<p class='player-points'>0</p>
+				<p> / </p>
+				<p>Computer</p>
+				<p class='computer-points'>0</p>
+			</div>
+		</div>
+		<div class='game-field'></div>
+	</div>
+	<div class="modal">
+			<div class="modal-body">
+				<div class="modal-window">
+					<label class="modal-label">
+						<svg width="16" height="16">
+							<polygon points="14.4,3.1 12.9,1.6 8,6.6 3.1,1.6 1.6,3.1 6.6,8 1.6,12.9 3.1,14.4 8,9.4 12.9,14.4 14.4,12.9 9.4,8 "></polygon>
+						</svg>
+					</label>
+					<div class="modal-inner">
+						<div class="modal-content">
+							<h2 class="modal-text">Player win</h2>
+							<button class="modal-btn">Play again?</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+	</div>
+
 	<script src='./build/main.js'></script>
 </body>
 
